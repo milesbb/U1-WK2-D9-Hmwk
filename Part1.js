@@ -87,11 +87,11 @@ function strivify (string) {
     }
 }
 let q5Test1 = "Dogs and Cats";
-console.log("INPUT Dogs and Cats =        " + strivify(q5Test1));
+console.log("INPUT Dogs and Cats = " + strivify(q5Test1));
 let q5Test2 = "Dogs and Cats do well at Strive!";
-console.log("INPUT Dogs and Cats do well at Strive! =          " + strivify(q5Test2));
+console.log("INPUT Dogs and Cats do well at Strive! = " + strivify(q5Test2));
 let q5Test3 = "Strive is a good place for dogs and cats!";
-console.log("INPUT Strive is a good place for dogs and cats! =         " + strivify(q5Test3));
+console.log("INPUT Strive is a good place for dogs and cats! = " + strivify(q5Test3));
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
