@@ -132,13 +132,13 @@ console.log("\n==========Question 5==========");
 
 console.log("\n==========Question 6==========");
 function loopUntil (x) {
-    let rand;
+    let randomNo = 0;
     let checker = 0;
-    for (let i = 0; checker === 3; i++) {
-        rand = Math.floor(Math.random() * 10);
-        console.log(rand.toString());
-        if (rand > x) {
-            checker += 1;
+    while (checker != 3) {
+        randomNo = Math.floor(Math.random() * 10);
+        console.log(randomNo.toString());
+        if (randomNo > x) {
+            checker++;
         } else {
             checker = 0;
         }
@@ -152,12 +152,28 @@ loopUntil(3);
 */
 
 console.log("\n==========Question 7==========");
+function average (array) {
+    let sum = 0;
+    let num = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] === "number") {
+            sum += array[i];
+            num++;
+        }
+    }
+    let ave = sum / num;
+    return ave;
+}
+let q7TestArray = [2, 5, "cat", true, 2, 5, 7, 5];
+console.log(q7TestArray.toString());
+console.log(average(q7TestArray).toString());
 
 /* EXTRA 8
  Write a function called "longest" to find the longest string from a given array of strings.
 */
 
 console.log("\n==========Question 8==========");
+
 
 /* EXTRA 9
  Write a function to create a very simple anti spam filter for your mailbox. The function takes a string emailContent, and returns a boolean.
